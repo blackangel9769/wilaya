@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Selectize Styles */
+.selectize-control {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.selectize-dropdown {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.selectize-dropdown-content {
+  padding: 5px;
+}
+
+.selectize-input {
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* SweetAlert Custom Styling */
+.swal2-popup {
+  font-size: 16px !important;
+  border-radius: 8px !important;
+}
+
+.swal2-title {
+  font-weight: bold !important;
+  color: #333 !important;
+}
+
+.swal2-confirm {
+  background-color: #4CAF50 !important;
+}

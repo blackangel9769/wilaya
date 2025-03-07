@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wilaya & Commune Manager</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" />
+  <script>
+    $(document).ready(function () {
+      $('#wilaya-select').selectize();
+
+      // Example SweetAlert2
+      $('#alert-button').click(function () {
+        Swal.fire({
+          title: "Success!",
+          text: "Data loaded successfully.",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div id ="root"c lass="w-full max-w-md p-6 bg-white shadow-lg rounded-lg">
+    <h2 class="text-2xl font-bold text-center mb-4">Wilaya & Commune Manager</h2>
+    <label for="wilaya-select" class="block text-gray-700">Select Wilaya:</label>
+    <select id="wilaya-select" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm">
+      <option value="">Select Wilaya</option>
+    </select>
+    <label for="Commune-select" class="block text-gray-700">SelectCommune:</label>
+    <select id="Commune-select" class="w-full p-2 border border-gray-300 rounded-lg shadow-sm">
+      <option value="">Select Commune</option>
+    </select>
+    <button id="alert-button" class="mt-4 w-full bg-blue-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-600">
+      Show Alert
+    </button>
+  </div>
+</body>
+</html>
